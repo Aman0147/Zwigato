@@ -8,7 +8,7 @@ import Cart from './pages/Cart/Cart';
 import Home from './pages/Home/Home';
 import MyOrders from './pages/MyOrders/MyOrders';
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
-
+// Project is Done
 function App() {
 
   const[login,setLogin] = useState(false);
