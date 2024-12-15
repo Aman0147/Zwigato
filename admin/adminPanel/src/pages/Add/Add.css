@@ -1,0 +1,120 @@
+.add {
+    max-width: 600px;
+    width: 90%;
+    padding: 30px;
+    background: linear-gradient(120deg, #f0f4f8, #d9e4ec);
+    backdrop-filter: blur(12px);
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-img-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-img-upload p {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.add-img-upload label {
+    cursor: pointer;
+}
+
+.add-img-upload img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add input[type="text"],
+.add input[type="number"],
+.add textarea,
+.add select {
+    padding: 12px;
+    background: #f9f9fb;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.add input[type="text"]:focus,
+.add input[type="number"]:focus,
+.add textarea:focus,
+.add select:focus {
+    border-color: #88aaff;
+    outline: none;
+}
+
+.add .add-btn {
+    padding: 12px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add .add-btn:hover {
+    background: #555;
+}
+
+.add-product-name,
+.add-product-description,
+.add-category,
+.add-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-product-name p,
+.add-product-description p,
+.add-category p,
+.add-price p {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.add-category-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.add-category,
+.add-price {
+    flex: 1;
+}
+
+@media (max-width: 900px) {
+    .add {
+        width: 95%;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .add-category-price {
+        flex-direction: column;
+    }
+    
+    .add-category,
+    .add-price {
+        width: 100%;
+    }
+}
